@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5917BAB1DE6DCC800DBCFF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BAA1DE6DCC800DBCFF6 /* main.m */; };
+		F5917BAE1DE6DCC800DBCFF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BAD1DE6DCC800DBCFF6 /* AppDelegate.m */; };
+		F5917BB11DE6DCC800DBCFF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BB01DE6DCC800DBCFF6 /* ViewController.m */; };
+		F5917BB41DE6DCC800DBCFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5917BB21DE6DCC800DBCFF6 /* Main.storyboard */; };
+		F5917BB61DE6DCC800DBCFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5917BB51DE6DCC800DBCFF6 /* Assets.xcassets */; };
+		F5917BB91DE6DCC800DBCFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5917BB71DE6DCC800DBCFF6 /* LaunchScreen.storyboard */; };
+		F5917BC41DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BC31DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.m */; };
+		F5917BCF1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BCE1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.m */; };
+		F5917BDF1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5917BDE1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5917BC01DE6DCC800DBCFF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5917B9E1DE6DCC800DBCFF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5917BA51DE6DCC800DBCFF6;
+			remoteInfo = WTKAutoHighlightedLabelDemo;
+		};
+		F5917BCB1DE6DCC800DBCFF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5917B9E1DE6DCC800DBCFF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5917BA51DE6DCC800DBCFF6;
+			remoteInfo = WTKAutoHighlightedLabelDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5917BA61DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTKAutoHighlightedLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5917BAA1DE6DCC800DBCFF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5917BAC1DE6DCC800DBCFF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5917BAD1DE6DCC800DBCFF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5917BAF1DE6DCC800DBCFF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5917BB01DE6DCC800DBCFF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5917BB31DE6DCC800DBCFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5917BB51DE6DCC800DBCFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5917BB81DE6DCC800DBCFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5917BBA1DE6DCC800DBCFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5917BBF1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTKAutoHighlightedLabelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5917BC31DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTKAutoHighlightedLabelDemoTests.m; sourceTree = "<group>"; };
+		F5917BC51DE6DCC800DBCFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5917BCA1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTKAutoHighlightedLabelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5917BCE1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTKAutoHighlightedLabelDemoUITests.m; sourceTree = "<group>"; };
+		F5917BD01DE6DCC800DBCFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5917BDD1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAutoHighLightLabel.h; sourceTree = "<group>"; };
+		F5917BDE1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAutoHighLightLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5917BA31DE6DCC800DBCFF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BBC1DE6DCC800DBCFF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BC71DE6DCC800DBCFF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5917B9D1DE6DCC800DBCFF6 = {
+			isa = PBXGroup;
+			children = (
+				F5917BDC1DE6DCE900DBCFF6 /* WTKAutoHighLightLabel */,
+				F5917BA81DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */,
+				F5917BC21DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests */,
+				F5917BCD1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests */,
+				F5917BA71DE6DCC800DBCFF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5917BA71DE6DCC800DBCFF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BA61DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo.app */,
+				F5917BBF1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.xctest */,
+				F5917BCA1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5917BA81DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BAC1DE6DCC800DBCFF6 /* AppDelegate.h */,
+				F5917BAD1DE6DCC800DBCFF6 /* AppDelegate.m */,
+				F5917BAF1DE6DCC800DBCFF6 /* ViewController.h */,
+				F5917BB01DE6DCC800DBCFF6 /* ViewController.m */,
+				F5917BB21DE6DCC800DBCFF6 /* Main.storyboard */,
+				F5917BB51DE6DCC800DBCFF6 /* Assets.xcassets */,
+				F5917BB71DE6DCC800DBCFF6 /* LaunchScreen.storyboard */,
+				F5917BBA1DE6DCC800DBCFF6 /* Info.plist */,
+				F5917BA91DE6DCC800DBCFF6 /* Supporting Files */,
+			);
+			path = WTKAutoHighlightedLabelDemo;
+			sourceTree = "<group>";
+		};
+		F5917BA91DE6DCC800DBCFF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BAA1DE6DCC800DBCFF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5917BC21DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BC31DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.m */,
+				F5917BC51DE6DCC800DBCFF6 /* Info.plist */,
+			);
+			path = WTKAutoHighlightedLabelDemoTests;
+			sourceTree = "<group>";
+		};
+		F5917BCD1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BCE1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.m */,
+				F5917BD01DE6DCC800DBCFF6 /* Info.plist */,
+			);
+			path = WTKAutoHighlightedLabelDemoUITests;
+			sourceTree = "<group>";
+		};
+		F5917BDC1DE6DCE900DBCFF6 /* WTKAutoHighLightLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F5917BDD1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.h */,
+				F5917BDE1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.m */,
+			);
+			path = WTKAutoHighLightLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5917BA51DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5917BD31DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemo" */;
+			buildPhases = (
+				F5917BA21DE6DCC800DBCFF6 /* Sources */,
+				F5917BA31DE6DCC800DBCFF6 /* Frameworks */,
+				F5917BA41DE6DCC800DBCFF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTKAutoHighlightedLabelDemo;
+			productName = WTKAutoHighlightedLabelDemo;
+			productReference = F5917BA61DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5917BBE1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5917BD61DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemoTests" */;
+			buildPhases = (
+				F5917BBB1DE6DCC800DBCFF6 /* Sources */,
+				F5917BBC1DE6DCC800DBCFF6 /* Frameworks */,
+				F5917BBD1DE6DCC800DBCFF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5917BC11DE6DCC800DBCFF6 /* PBXTargetDependency */,
+			);
+			name = WTKAutoHighlightedLabelDemoTests;
+			productName = WTKAutoHighlightedLabelDemoTests;
+			productReference = F5917BBF1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5917BC91DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5917BD91DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemoUITests" */;
+			buildPhases = (
+				F5917BC61DE6DCC800DBCFF6 /* Sources */,
+				F5917BC71DE6DCC800DBCFF6 /* Frameworks */,
+				F5917BC81DE6DCC800DBCFF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5917BCC1DE6DCC800DBCFF6 /* PBXTargetDependency */,
+			);
+			name = WTKAutoHighlightedLabelDemoUITests;
+			productName = WTKAutoHighlightedLabelDemoUITests;
+			productReference = F5917BCA1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5917B9E1DE6DCC800DBCFF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "王同科";
+				TargetAttributes = {
+					F5917BA51DE6DCC800DBCFF6 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					F5917BBE1DE6DCC800DBCFF6 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5917BA51DE6DCC800DBCFF6;
+					};
+					F5917BC91DE6DCC800DBCFF6 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5917BA51DE6DCC800DBCFF6;
+					};
+				};
+			};
+			buildConfigurationList = F5917BA11DE6DCC800DBCFF6 /* Build configuration list for PBXProject "WTKAutoHighlightedLabelDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5917B9D1DE6DCC800DBCFF6;
+			productRefGroup = F5917BA71DE6DCC800DBCFF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5917BA51DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */,
+				F5917BBE1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests */,
+				F5917BC91DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5917BA41DE6DCC800DBCFF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5917BB91DE6DCC800DBCFF6 /* LaunchScreen.storyboard in Resources */,
+				F5917BB61DE6DCC800DBCFF6 /* Assets.xcassets in Resources */,
+				F5917BB41DE6DCC800DBCFF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BBD1DE6DCC800DBCFF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BC81DE6DCC800DBCFF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5917BA21DE6DCC800DBCFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5917BB11DE6DCC800DBCFF6 /* ViewController.m in Sources */,
+				F5917BDF1DE6DD1300DBCFF6 /* WTKAutoHighLightLabel.m in Sources */,
+				F5917BAE1DE6DCC800DBCFF6 /* AppDelegate.m in Sources */,
+				F5917BAB1DE6DCC800DBCFF6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BBB1DE6DCC800DBCFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5917BC41DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917BC61DE6DCC800DBCFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5917BCF1DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5917BC11DE6DCC800DBCFF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5917BA51DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */;
+			targetProxy = F5917BC01DE6DCC800DBCFF6 /* PBXContainerItemProxy */;
+		};
+		F5917BCC1DE6DCC800DBCFF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5917BA51DE6DCC800DBCFF6 /* WTKAutoHighlightedLabelDemo */;
+			targetProxy = F5917BCB1DE6DCC800DBCFF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5917BB21DE6DCC800DBCFF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5917BB31DE6DCC800DBCFF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5917BB71DE6DCC800DBCFF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5917BB81DE6DCC800DBCFF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5917BD11DE6DCC800DBCFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5917BD21DE6DCC800DBCFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5917BD41DE6DCC800DBCFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5917BD51DE6DCC800DBCFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5917BD71DE6DCC800DBCFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTKAutoHighlightedLabelDemo.app/WTKAutoHighlightedLabelDemo";
+			};
+			name = Debug;
+		};
+		F5917BD81DE6DCC800DBCFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTKAutoHighlightedLabelDemo.app/WTKAutoHighlightedLabelDemo";
+			};
+			name = Release;
+		};
+		F5917BDA1DE6DCC800DBCFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WTKAutoHighlightedLabelDemo;
+			};
+			name = Debug;
+		};
+		F5917BDB1DE6DCC800DBCFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WTKAutoHighlightedLabelDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.WTKAutoHighlightedLabelDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WTKAutoHighlightedLabelDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5917BA11DE6DCC800DBCFF6 /* Build configuration list for PBXProject "WTKAutoHighlightedLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5917BD11DE6DCC800DBCFF6 /* Debug */,
+				F5917BD21DE6DCC800DBCFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5917BD31DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5917BD41DE6DCC800DBCFF6 /* Debug */,
+				F5917BD51DE6DCC800DBCFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5917BD61DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5917BD71DE6DCC800DBCFF6 /* Debug */,
+				F5917BD81DE6DCC800DBCFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5917BD91DE6DCC800DBCFF6 /* Build configuration list for PBXNativeTarget "WTKAutoHighlightedLabelDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5917BDA1DE6DCC800DBCFF6 /* Debug */,
+				F5917BDB1DE6DCC800DBCFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5917B9E1DE6DCC800DBCFF6 /* Project object */;
+}
