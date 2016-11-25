@@ -18,10 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [_label wtk_setText:@"sadsadfsadasasdasda@dasdgisagfdhsfjdsvfjsd asd" withClickBlock:^(NSString *text) {
+        
+    }];
 }
 
 - (IBAction)btnClick:(id)sender {
+    _label.w_normalColor = [UIColor blackColor];
+    _label.w_highColor = [UIColor greenColor];
+    _label.w_selectedColor = [UIColor yellowColor];
     [_label wtk_setText:self.textView.text withClickBlock:^(NSString *text) {
         
     }];

@@ -32,16 +32,17 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8q-An-65o" customClass="WTKAutoHighLightLabel">
-                                <rect key="frame" x="16" y="182" width="343" height="90"/>
+                                <rect key="frame" x="16" y="182" width="343" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.95210424280820405" blue="0.92621901918677962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="mIj-6E-c35"/>
+                                    <constraint firstAttribute="height" constant="80" id="mIj-6E-c35"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ete-NM-dhX">
-                                <rect key="frame" x="122" y="310" width="127" height="30"/>
+                                <rect key="frame" x="122" y="300" width="127" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.92438818345047158" blue="0.2783633518246782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="i3b-ph-SQ2"/>
