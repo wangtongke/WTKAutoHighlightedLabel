@@ -17,9 +17,11 @@
 @property(nonatomic,strong)UIColor *w_normalColor;
 ///高亮部分选中颜色 默认与高亮一致
 @property(nonatomic,strong)UIColor *w_selectedColor;
-
 ///点击方法
 @property(nonatomic,copy)void(^clickBlock)(NSString *);
+
+///判定方法  存放正则表达式
+@property(nonatomic,strong)NSMutableArray *ruleArray;
 
 /**
  * 设置自动高亮text
