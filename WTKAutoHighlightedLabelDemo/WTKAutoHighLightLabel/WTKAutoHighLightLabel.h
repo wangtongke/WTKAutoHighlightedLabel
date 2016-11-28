@@ -20,14 +20,13 @@
 ///点击方法
 @property(nonatomic,copy)void(^clickBlock)(NSString *);
 
-///判定方法  存放正则表达式
-@property(nonatomic,strong)NSMutableArray *ruleArray;
+///判定方法  存放正则表达式。 可以添加
+@property(nonatomic,strong)NSMutableArray<NSString *> *ruleArray;
 
 /**
  * 设置自动高亮text
  */
 - (void)wtk_setText:(NSString *)text;
-
 /**
  * 设置text
  * @param text 文字
@@ -37,7 +36,6 @@
 - (void)wtk_setText:(NSString *)text
    highLightedColor:(UIColor *)highColor
      withClickBlock:(void(^)(NSString *text))clickBlock;
-
 /**
  * 设置text
  * @param text 文字
@@ -49,7 +47,6 @@
    highLightedColor:(UIColor *)highColor
     withNormalColor:(UIColor *)normalColor
      withClickBlock:(void(^)(NSString *text))clickBlock;
-
 /**
  * 设置text
  * @param text 文字

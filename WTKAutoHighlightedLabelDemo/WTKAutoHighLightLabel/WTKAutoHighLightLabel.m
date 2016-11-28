@@ -8,10 +8,6 @@
 
 #import "WTKAutoHighLightLabel.h"
 #import <CoreText/CoreText.h>
-#define kRegexHighlightViewTypeURL @"url"
-#define kRegexHighlightViewTypeAccount @"account"
-#define kRegexHighlightViewTypeTopic @"topic"
-#define kRegexHighlightViewTypeEmoji @"emoji"
 
 ///若要修改判定方法，修改此处
 #define URLRegular @"((http|ftp|https|Http|Http)://)(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,4})*(/[a-zA-Z0-9\&%_\./-~-]*)?"
@@ -22,6 +18,8 @@
 @interface WTKAutoHighLightLabel ()
 
 @property(nonatomic,strong)NSMutableDictionary *highRangeDic;
+
+@property(nonatomic,copy)NSString *selectedStr;
 
 @end
 
@@ -35,7 +33,7 @@
 
 - (void)wtk_setText:(NSString *)text
 {
-    [self wtk_setText:text withClickBlock:nil];
+    [self wtk_setText:text withClickBlock:self.clickBlock];
 }
 - (void)wtk_setText:(NSString *)text withClickBlock:(void (^)(NSString *))clickBlock
 {
@@ -57,7 +55,7 @@
     self.w_selectedColor = selectedColor;
     if (clickBlock || self.clickBlock)
     {
-        self.clickBlock = clickBlock;
+        self.clickBlock = clickBlock ? clickBlock : self.clickBlock;
         self.userInteractionEnabled = YES;
         highDic = @{}.mutableCopy;
     }
@@ -85,13 +83,7 @@
 - (NSMutableAttributedString *)highlightText:(NSMutableAttributedString *)coloredString{
     NSString* string = coloredString.string;
     NSRange range = NSMakeRange(0,[string length]);
-    NSDictionary* definition = @{kRegexHighlightViewTypeAccount: AccountRegular,
-                                 kRegexHighlightViewTypeURL:URLRegular,
-                                 kRegexHighlightViewTypeTopic:TopicRegular,
-                                 kRegexHighlightViewTypeEmoji:EmojiRegular,
-                                 };
-    for(NSString* key in definition) {
-        NSString* expression = [definition objectForKey:key];
+    for(NSString* expression in self.ruleArray) {
         NSArray* matches = [[NSRegularExpression regularExpressionWithPattern:expression options:NSRegularExpressionDotMatchesLineSeparators error:nil] matchesInString:string options:0 range:range];
         for(NSTextCheckingResult* match in matches) {
            
@@ -99,6 +91,8 @@
             if (currentRange.location != -1 && currentRange.location >= match.range.location && currentRange.length + currentRange.location <= match.range.length + match.range.location)
             {
                  [coloredString addAttribute:NSForegroundColorAttributeName value:self.w_selectedColor range:match.range];
+                self.selectedStr = [coloredString attributedSubstringFromRange:match.range].string;
+                
             }
             else
             {
@@ -207,14 +201,12 @@
                 CGFloat runAscent;
                 CGFloat runDescent;
                 CTRunRef run = CFArrayGetValueAtIndex(runs, j);
-                NSDictionary* attributes = (__bridge NSDictionary*)CTRunGetAttributes(run);
                 if (highDic!=nil) {
                     CFRange range = CTRunGetStringRange(run);
                     CGRect runRect;
                     runRect.size.width = CTRunGetTypographicBounds(run, CFRangeMake(0,0), &runAscent, &runDescent, NULL);
                     float offset = CTLineGetOffsetForStringIndex(line, range.location, NULL);
                     float height = runAscent;
-                    NSLog(@"y--%.2f, height--%.2f runDescent--%.2f",y,height,runDescent);
                     float w_y = (self.frame.size.height - numberOfLines * height - (numberOfLines - 1) * runDescent) / 2.0 + lineIndex * (height + runDescent);
 //                    runRect=CGRectMake(lineOrigin.x + offset, (self.frame.size.height+5)-y-height+runDescent/2, runRect.size.width, height);
                     runRect=CGRectMake(lineOrigin.x + offset, w_y, runRect.size.width, height);
@@ -253,15 +245,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"%@",highDic);
     CGPoint location = [[touches anyObject] locationInView:self];
-    NSLog(@"location--x-%.2f  y-%.2f",location.x,location.y);
     for (NSString *key in highDic.allKeys)
     {
         CGRect frame = [highDic[key] CGRectValue];
         if (CGRectContainsPoint(frame, location))
         {
-            NSLog(@"----------");
             NSRange range = NSRangeFromString(key);
             range = NSMakeRange(range.location, range.length - 1);
             currentRange = range;
@@ -273,9 +262,13 @@
 {
     if (isHighLighted)
     {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self showNormalWord];
-            
+        __weak __typeof(self)weakSelf = self;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.08 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf showNormalWord];
+            if (weakSelf.selectedStr && weakSelf.clickBlock)
+            {
+                weakSelf.clickBlock(weakSelf.selectedStr);
+            }
         });
     }
 }
@@ -308,7 +301,7 @@
 {
     if (!_w_selectedColor)
     {
-        _w_selectedColor = self.w_highColor;
+        _w_selectedColor = [UIColor colorWithRed:0.5 green:0.5 blue:1 alpha:1];
     }
     return _w_selectedColor;
 }

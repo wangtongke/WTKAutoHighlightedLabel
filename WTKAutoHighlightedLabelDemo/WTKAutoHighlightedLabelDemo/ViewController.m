@@ -27,9 +27,12 @@
 }
 
 - (IBAction)btnClick:(id)sender {
-
+    __weak __typeof(self)weakSelf = self;
     [_label wtk_setText:self.textView.text withClickBlock:^(NSString *text) {
-        
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"click" message:text preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:action];
+        [weakSelf presentViewController:alert animated:YES completion:nil];
     }];
 }
 
