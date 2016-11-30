@@ -19,9 +19,10 @@
 @property(nonatomic,strong)UIColor *w_selectedColor;
 ///点击方法
 @property(nonatomic,copy)void(^clickBlock)(NSString *);
-
-///判定方法  存放正则表达式。 可以添加
+///判定方法  存放正则表达式。 可以添加,也可以重置
 @property(nonatomic,strong)NSMutableArray<NSString *> *ruleArray;
+///设置高亮range
+@property(nonatomic,assign)NSRange w_range;
 
 /**
  * 设置自动高亮text

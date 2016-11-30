@@ -21,6 +21,8 @@
 
 @property(nonatomic,copy)NSString *selectedStr;
 
+@property(nonatomic,copy)NSMutableAttributedString *w_mString;
+
 @end
 
 @implementation WTKAutoHighLightLabel{
@@ -79,6 +81,19 @@
     
     
 }
+- (void)setW_range:(NSRange)w_range
+{
+    _w_range = w_range;
+    if (w_text.length > w_range.location + w_range.length)
+    {
+        [self wtk_setText:w_text];
+    }
+    else
+    {
+        NSLog(@"越界");
+    }
+    
+}
 
 - (NSMutableAttributedString *)highlightText:(NSMutableAttributedString *)coloredString{
     NSString* string = coloredString.string;
@@ -92,12 +107,24 @@
             {
                  [coloredString addAttribute:NSForegroundColorAttributeName value:self.w_selectedColor range:match.range];
                 self.selectedStr = [coloredString attributedSubstringFromRange:match.range].string;
-                
             }
             else
             {
                  [coloredString addAttribute:NSForegroundColorAttributeName value:self.w_highColor range:match.range];
             }
+        }
+    }
+    if (self.w_range.location != NSNotFound)
+    {
+        self.highRangeDic[NSStringFromRange(self.w_range)] = @1;
+        if (currentRange.location != -1 && currentRange.location >= self.w_range.location && currentRange.length + currentRange.location <= self.w_range.length + self.w_range.location)
+        {
+            [coloredString addAttribute:NSForegroundColorAttributeName value:self.w_selectedColor range:self.w_range];
+            self.selectedStr = [coloredString attributedSubstringFromRange:self.w_range].string;
+        }
+        else
+        {
+            [coloredString addAttribute:NSForegroundColorAttributeName value:self.w_highColor range:self.w_range];
         }
     }
     return coloredString;
@@ -218,10 +245,10 @@
                             [highDic setValue:[NSValue valueWithCGRect:runRect] forKey:NSStringFromRange(nRange)];
                         }
                     }
-                    if (self.highRangeDic[NSStringFromRange(nRange)])
-                    {
-                        
-                    }
+//                    if (self.highRangeDic[NSStringFromRange(nRange)])
+//                    {
+//                        
+//                    }
                 }
             }
         }
