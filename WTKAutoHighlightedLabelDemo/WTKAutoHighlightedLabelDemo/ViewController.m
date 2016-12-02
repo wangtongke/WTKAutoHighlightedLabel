@@ -23,6 +23,7 @@
     _label.w_selectedColor = [UIColor yellowColor];
     [_label wtk_setText:@"sadsadfsadasasdasda@dasdgisagfdhsfjdsvfjsd asd" withClickBlock:^(NSString *text) {
         NSLog(@"text------%@",text);
+//        ssda
     }];
 }
 
